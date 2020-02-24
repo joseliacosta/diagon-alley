@@ -1,4 +1,5 @@
 # Diagon Alley 🧹
+[![Build Status](https://travis-ci.com/joselialcosta/diagon-alley.svg?branch=master)](https://travis-ci.com/joselialcosta/diagon-alley)
 
 How Harry Potter can help us to learn about tests into React applications? Provinding us this beautiful data into this cool API: [Potter API](https://www.potterapi.com/)
 
