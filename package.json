@@ -19,6 +19,9 @@
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|json)\"",
     "check-format": "prettier --ignore-path .gitignore --list-different \"**/*.+(js|json)\""
   },
+  "hooks": {
+    "pre-commit": "npm run validate"
+  },
   "browserslist": {
     "production": [
       ">0.2%",
@@ -35,6 +38,7 @@
     "eslint": "^6.8.0",
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-react": "^7.18.3",
+    "husky": "^4.2.3",
     "prettier": "^1.19.1"
   }
 }
