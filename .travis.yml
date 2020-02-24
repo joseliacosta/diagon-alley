@@ -1,6 +1,12 @@
 language: node_js
 node_js:
-  - 10.16.3
+    - "stable"
+  cache:
+    directories:
+    - node_modules
+  script:
+    - yarn test
+    - yarn build build
 deploy:
   provider: pages
   skip_cleanup: true
