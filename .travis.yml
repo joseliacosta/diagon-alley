@@ -1,16 +1,17 @@
 language: node_js
 node_js:
-    - "stable"
-  cache:
-    directories:
+  - 'stable'
+cache:
+  directories:
     - node_modules
-  script:
-    - yarn test
-    - yarn build build
+script:
+  - yarn test
+  - yarn build
+
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-  keep_history: true
+  github_token: $GITHUB_TOKEN
+  local_dir: build
   on:
-  branch: master
+    branch: master
