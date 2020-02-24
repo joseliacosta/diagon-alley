@@ -12,8 +12,10 @@ Requirements:
 As a study project, it was created by `create-react-app`. But don't worry, you won't install it.
 
 How to run:
-```git clone https://github.com/joselialcosta/diagon-alley.git
+```
+git clone https://github.com/joselialcosta/diagon-alley.git
 yarn 
-yarn start```
+yarn start
+```
 
 
