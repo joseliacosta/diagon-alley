@@ -2,6 +2,7 @@ import React from 'react'
 import './App.css'
 import Card from './components/card/card'
 import Navbar from './components/navbar/navbar'
+import Filter from './components/filter/filter'
 
 const wizards = [
   {
@@ -38,6 +39,11 @@ function App() {
     <div className='App'>
       <header>
         <Navbar />
+        <Filter
+          onChange={() => {
+            console.log('Foi')
+          }}
+        />
       </header>
       <main className='container'>
         {wizards.map(wizard => {

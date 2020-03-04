@@ -1,5 +1,9 @@
+.App {
+  margin: 0 20px;
+  padding: 0 20px;
+}
 .container {
   display: flex;
   flex-wrap: wrap;
-  margin: 20px;
+  padding: 20px 0px;
 }
