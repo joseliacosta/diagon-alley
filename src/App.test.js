@@ -1,10 +1,21 @@
 import React from 'react'
-import { render } from '@testing-library/react'
+import { fireEvent, render } from '@testing-library/react'
 import App from './App'
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />)
-  const navTitle = getByText(/Wizards'World/i)
+describe('App', () => {
+  test('Filters the wizard list by house', () => {
+    const { getByRole, getAllByText } = render(<App />)
 
-  expect(navTitle).toBeInTheDocument()
+    fireEvent.change(getByRole('listbox'), { target: { value: 'slytherin' } })
+
+    const items = getAllByText('Student from Slytherin')
+    expect(items).toHaveLength(1)
+  })
+
+  test('Shows all wizard list ', () => {
+    const { getAllByText } = render(<App />)
+
+    const items = getAllByText(/Student from/i)
+    expect(items).toHaveLength(4)
+  })
 })

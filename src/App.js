@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import Card from './components/card/card'
 import Navbar from './components/navbar/navbar'
@@ -34,19 +34,25 @@ const wizards = [
   },
 ]
 
-function App() {
+const App = ()=> {
+
+  const [filteredWizards, setFilter] = useState(wizards)
+
+  const onFilterHouse = (houseName) => {
+    const filteredList = wizards.filter((wizard) =>  wizard.house.toLowerCase() === houseName)
+    setFilter(filteredList)
+  }
+
   return (
     <div className='App'>
       <header>
         <Navbar />
         <Filter
-          onChange={() => {
-            console.log('Foi')
-          }}
+          onChange={onFilterHouse}
         />
       </header>
       <main className='container'>
-        {wizards.map(wizard => {
+        {filteredWizards.map(wizard => {
           return <Card key={wizard.name} {...wizard} />
         })}
       </main>

@@ -21,7 +21,7 @@ const House = props => {
 
   return (
     <>
-      <h3>{house}</h3>
+      <h3>Student from {house}</h3>
       <img alt={`${house}'s logo`} src={houseSelector(house)} />
     </>
   )

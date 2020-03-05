@@ -2,7 +2,7 @@ import React from 'react'
 
 const Filter = props => {
   return (
-    <select onChange={props.onChange}>
+    <select onChange={(event) => props.onChange(event.target.value)}>
       <option value='gryffindor'>Gryffindor</option>
       <option value='hufflepuff'>Hufflepuff</option>
       <option value='ravenclaw'>Ravenclaw</option>
