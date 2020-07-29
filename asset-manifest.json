@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/diagon-alley/static/css/main.e71a7498.chunk.css",
+    "main.js": "/diagon-alley/static/js/main.4087ab20.chunk.js",
+    "main.js.map": "/diagon-alley/static/js/main.4087ab20.chunk.js.map",
+    "runtime-main.js": "/diagon-alley/static/js/runtime-main.f24f4242.js",
+    "runtime-main.js.map": "/diagon-alley/static/js/runtime-main.f24f4242.js.map",
+    "static/js/2.f1f74cd1.chunk.js": "/diagon-alley/static/js/2.f1f74cd1.chunk.js",
+    "static/js/2.f1f74cd1.chunk.js.map": "/diagon-alley/static/js/2.f1f74cd1.chunk.js.map",
+    "index.html": "/diagon-alley/index.html",
+    "precache-manifest.2cc127520ea62d4e2a3db1f14d52a711.js": "/diagon-alley/precache-manifest.2cc127520ea62d4e2a3db1f14d52a711.js",
+    "service-worker.js": "/diagon-alley/service-worker.js",
+    "static/css/main.e71a7498.chunk.css.map": "/diagon-alley/static/css/main.e71a7498.chunk.css.map",
+    "static/js/2.f1f74cd1.chunk.js.LICENSE.txt": "/diagon-alley/static/js/2.f1f74cd1.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f24f4242.js",
+    "static/js/2.f1f74cd1.chunk.js",
+    "static/css/main.e71a7498.chunk.css",
+    "static/js/main.4087ab20.chunk.js"
+  ]
+}
